@@ -1,0 +1,67 @@
+@import '../../../App.scss';
+
+.ContainerRight{
+  width: 80vw;
+  header{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px;
+    padding-left: 34px;
+    box-sizing: border-box;
+    border-bottom: 1px solid $greyBorder ;
+      //
+    .containeLeft{
+      display: flex;
+      align-items: center;
+      .elementDisc{
+        font-size: $font20;
+        margin-left: 12px;
+        font-weight: 700;
+      }
+      .buble{
+        display: flex;
+        align-items: center;
+        .element{
+          width: 10px;
+          height: 10px;
+          background-color: #38C156;
+          border-radius: 100%;
+        }
+        font-size: $font14;
+        margin-top: 4px;
+        p{
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+  .avatarUser{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 100%;
+  }
+  .contentRight{
+    button{
+      padding: 0;
+      margin: 0;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      outline: none;
+      border-radius: 4px;
+      box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset, rgba(15, 15, 15, 0.1) 0px 1px 2px;
+      img{
+        padding: 0;
+        margin: 0;
+        width: 18px;
+      }
+    }
+  }
+}

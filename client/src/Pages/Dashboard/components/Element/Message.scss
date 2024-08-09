@@ -1,0 +1,292 @@
+@import '../../../../App.scss';
+
+.Message{
+  width: 100%;
+  height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  background-image: url("../../../../assets/bg/bg.svg");
+  background-position: center;
+  background-size: 100%;
+}
+
+.HeaderPop{
+  border: 1px solid red;
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  padding-left: 34px;
+  display: none;
+}
+
+
+
+.SendMessage{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px;
+  padding-left: 34px;
+  background: white;
+  border-top: 1px solid $greyBorder ;
+
+  form{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    input{
+      width: 60vw;
+      height: 44px;
+      box-sizing: border-box;
+      padding: 0px 20px;
+      border-radius: 1000px;
+      border: none;
+      outline: none;
+      background: red;
+      background: $geyElement;
+      box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset, rgba(15, 15, 15, 0.1) 0px 1px 2px;
+
+    }
+  }
+
+    .sendText{
+      background: $geyElement;
+      width: 32px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      outline: none;
+      border: none;
+      box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset, rgba(15, 15, 15, 0.1) 0px 1px 2px;
+    }
+  .import{
+    background: transparent;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    transition: $transition;
+    &:hover{
+      box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset, rgba(15, 15, 15, 0.1) 0px 1px 2px;
+    }
+  }
+
+}
+
+.sent-type{
+  position: relative;
+  .sen-tupe-element{
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    background: white;
+    padding: 8px;
+    border-radius: 4px;
+    flex-direction: column;
+    box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset, rgba(15, 15, 15, 0.1) 0px 1px 2px;
+    button{
+      width: 160px;
+      height: 34px;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      background: transparent;
+      display: flex;
+      align-items: center;
+      transition: $transition;
+      &:hover{
+        background: $geyElement;
+      }
+      img{
+        margin-right: 4px;
+      }
+    }
+    button:first-child{
+      border-bottom: 1px solid $greyBorder ;
+    }
+  }
+}
+.MessageContent {
+  height: calc(85vh - 28px);
+  box-sizing: border-box;
+  padding: 14px;
+  padding-left: 34px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+
+
+.message.sent{
+  margin-bottom: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  .contentDisplay{
+    width: 60%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .messageElement{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    p{
+      box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset;
+      background: $orange2;
+      color: white;
+      font-weight: 500;
+      font-size: $font14;
+      padding: 10px;
+      border-bottom-left-radius: 14px;
+      border-top-left-radius: 14px;
+      border-top-right-radius: 14px;
+      display: flex;
+      justify-content: flex-end;
+      width: auto;
+    }
+
+  }
+  .element-user{
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+
+    //
+    .sender{
+      font-size: $font12;
+      font-weight: 700;
+    }
+    .boule{
+      width: 6px;
+      height: 6px;
+      background: $grey4 ;
+      border-radius: 100%;
+      margin: 0px 4px;
+    }
+    .time{
+      font-size: $font12;
+      background: transparent;
+    }
+  }
+
+  .isRead{
+    background: $grey4;
+    margin-left: 4px;
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 8px;
+    }
+  }
+  .elementContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+.message.received{
+  margin-bottom: 14px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  .contentDisplay{
+    width: 60%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .messageElement{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    p{
+      box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset;
+      background: white;
+      color: white;
+      font-weight: 500;
+      font-size: $font14;
+      padding: 10px;
+      border-bottom-right-radius: 14px;
+      border-top-right-radius: 14px;
+      border-top-left-radius: 14px;
+      display: flex;
+      justify-content: flex-end;
+      width: auto;
+      color: #27282D;
+    }
+
+  }
+  .element-user{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 4px;
+
+    //
+    .sender{
+      font-size: $font12;
+      font-weight: 700;
+    }
+    .boule{
+      width: 6px;
+      height: 6px;
+      background: $grey4 ;
+      border-radius: 100%;
+      margin: 0px 4px;
+    }
+    .time{
+      font-size: $font12;
+      background: transparent;
+    }
+  }
+
+  .isRead{
+
+    margin-right: 4px;
+    border-radius: 100%;
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 8px;
+    }
+  }
+  .elementContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.isRead.read {
+  background-color: #43B740 !important;
+}
+
+.isRead.unread {
+  background-color: $grey4 !important;
+}

@@ -1,0 +1,109 @@
+//FONT SIZE
+$font8 : 8px;
+$font10 : 10px;
+$font12 : 12px;
+$font14 : 14px;
+$font16 : 16px;
+$font20 : 20px;
+$font24 : 24px;
+$font28 : 28px;
+$font34 : 34px;
+$font40 : 40px;
+
+//COLOR Font
+$white: #fff;
+$noir : #000;
+$noir2 : #27282D;
+$grey1 : #515E68;
+$grey2 : #EEF0F2;
+$grey3 : #F8F9FA;
+$grey4 : #A2A5A6;
+$orange1 : #F19C74;
+$orange2 : #D85C1F;
+$orange3: #F9F1ED;
+$orange3Hover : #F6EBE5;
+$blue : #D6E0F7;
+$blue2 : #5561E1;
+
+$red:#F43F3F;
+
+$geyElement: #F6F8FA;
+$greyBorder :#F6F8FA;
+
+// font weight
+$normal : 500;
+$medium : 600;
+
+// Radius
+$border10 : 10px;
+
+// transition
+$transition : .3s ease-in-out;
+
+//BG
+$bg1Clair :#F8F9FA;
+$blueElement : #65D2D0;
+
+$bgModal :rgba(15, 15, 15, 0.6);
+
+button{
+  cursor: pointer;
+}
+
+//mediaScreen
+
+$mdGrand:1250px;
+$mdMed:850px;
+$mdTel:550px;
+
+h1,h2,h3,h4,h5,h6,p,span{
+  margin: 0;
+  padding: 0;
+}
+////////////////////////////////////
+.inputElement, option{
+  display: flex;
+  align-items: center;
+  width: 250px;
+  font-size: 15px;
+  line-height: 26px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset;
+  background: transparent;
+  cursor: text;
+  padding: 4px 10px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+  outline: none;
+  border: none;
+}
+
+.btnElement{
+  user-select: none;
+  transition: background 20ms ease-in;
+  cursor: pointer;
+  display: inline-grid;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  height: 36px;
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-weight: 500;
+  background: $orange1;
+  box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px inset, rgba(15, 15, 15, 0.1) 0px 1px 2px;
+  color: white;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  width: 270px;
+  outline: none;
+  border: none;
+}
+
+.content-test-mail-2{
+  margin-top: 0px !important;
+}
